@@ -46,7 +46,7 @@ export function DashboardPage() {
 
   
   const completedOrders = orders.filter(o => o.status === "completed")
-  const activeOrders = orders.filter(o => o.status === "in_progress")
+  const activeOrders = orders.filter(o => o.status === "in_progress" || o.status === "pending")
 
   console.log("Completed Orders:", completedOrders)
   console.log("Active Orders:", activeOrders)
